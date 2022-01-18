@@ -1,5 +1,6 @@
 # NLP - Natural Language Processing
 App to run set of NLP tools in docker with the latest Python version and using docker bind mounts to access local source code.
+See also the blog related to this repo at <https://digitalenvironment.org/natural-language-processing-vader-sentiment-analysis-with-nltk>
 
 ## Use of bind mounting
 The code is implemented 'with docker bind mounting', achieved with flags set in the `docker run` command. Here the source code is held locally, but <i>referenced</i> within the container. To edit the code to make any changes, the container will reference the edited file immediately as the edits are made. The image does not need to be rebuilt first. The workflow is (1) update the docker file and rebuild the image, (2) then in the container CLI run the python script, (3) edit the local Python script and rerun in the container to see the result.
