@@ -37,7 +37,7 @@ To run the docker container file, to bind mount the development code instead of 
 `-t` = Allocate a pseudo-tty (foreground)<br />
 `-i` = Keep STDIN open (foreground)<br />
 `-v` = (from):(to)     - $(pwd) means the 'current folder'<br />
-`-w` = working folder
+`-w` = working folder<br />
 `--name` = tagged container name
 
 ```
